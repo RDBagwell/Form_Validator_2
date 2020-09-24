@@ -42,7 +42,7 @@ function getFieldName(input) {
 }
 
 function checkPasswordMatch(input1, input2) {
-    if(input1.value === input2.value){
+    if(input1.value === input2.value && input1.value !=''){
         showSuccess(input1);
         showSuccess(input2);
     } else {
